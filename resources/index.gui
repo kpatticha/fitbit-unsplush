@@ -1,0 +1,8 @@
+<svg class="background">
+  <image href="background.jpg" />
+  <text id="hour" />
+  <text id="minutes" />
+  <text id="ampm" />
+  <image id="hrt" href="like.png" />
+  <text id="hrtBeat" />
+</svg>

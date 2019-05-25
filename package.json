@@ -1,0 +1,26 @@
+{
+  "fitbit": {
+    "appUUID": "ee9dd2cf-5eea-4efa-bd75-62eb71c95ec9",
+    "appType": "clockface",
+    "appDisplayName": "Unsplash",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "",
+    "requestedPermissions": [
+      "access_heart_rate"
+    ],
+    "buildTargets": [
+      "higgs",
+      "meson",
+      "gemini"
+    ],
+    "i18n": {
+      "en": {
+        "name": "Unsplash"
+      }
+    },
+    "defaultLanguage": "en-US"
+  },
+  "devDependencies": {
+    "@fitbit/sdk": "~3.1.0"
+  }
+}

@@ -1,0 +1,49 @@
+.background {
+  viewport-fill: grey;
+}
+
+#hour {
+  font-size: 80;
+  font-family: Colfax-Medium;
+  text-length: 32;
+  text-anchor: middle;
+  x: 50%;
+  y: 50%;
+  fill: white;
+}
+
+#minutes {
+  font-size: 80;
+  font-family: Colfax-Bold;
+  text-length: 32;
+  text-anchor: middle;
+  x: 50%;
+  y: 50%+60;
+  fill: white;
+}
+
+#ampm {
+  font-size: 20;
+  font-family: Colfax-Medium;
+  text-length: 32;
+  text-anchor: middle;
+  x: 70%;
+  y: 50%+60;
+  fill: white;
+}
+
+#hrt {
+  width: 15;
+  height: 15;
+  x: 254;
+  y: 277;
+}
+
+#hrtBeat {
+  font-size: 16;
+  font-family: Colfax-Medium;
+  text-length: 32;
+  x: 270;
+  y: 290;
+  fill: fb-dark-gray;
+}
