@@ -3,6 +3,6 @@
   <text id="hour" />
   <text id="minutes" />
   <text id="ampm" />
-  <image id="hrt" href="like.png" />
+  <image id="hrtImage" />
   <text id="hrtBeat" />
 </svg>

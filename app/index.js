@@ -1,3 +1,4 @@
+import { me } from "appbit";
 import { HeartRateSensor } from "heart-rate";
 import { preferences } from "user-settings";
 import clock from "clock";
@@ -12,6 +13,7 @@ const hour = document.getElementById("hour");
 const minutes = document.getElementById("minutes");
 const ampm = document.getElementById("ampm");
 const hrtBeat = document.getElementById("hrtBeat");
+const hrtImage = document.getElementById("hrtImage");
 
 // Update the <text> element every tick with the current time
 clock.ontick = (evt) => {
@@ -34,13 +36,21 @@ clock.ontick = (evt) => {
 }
 
 // Create a new instance of the HeartRateSensor object
-let hrm = new HeartRateSensor();
 
-// Declare an event handler that will be called every time a new HR value is received.
-hrm.onreading = function() {
-  // Peek the current sensor values
-  hrtBeat.text = hrm.heartRate;
+if (me.permissions.granted("access_heart_rate")) {
+  let hrm = new HeartRateSensor();
+  
+  hrm.onreading = function() {
+    // Peek the current sensor values
+    hrtBeat.text = hrm.heartRate;
+    hrtImage.href = "like.png"
+  }
+  
+  hrm.start();
+  
 }
 
+// Declare an event handler that will be called every time a new HR value is received.
+
+
 // Begin monitoring the sensor
-hrm.start();
