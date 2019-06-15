@@ -36,7 +36,6 @@ clock.ontick = (evt) => {
 }
 
 // Create a new instance of the HeartRateSensor object
-
 if (me.permissions.granted("access_heart_rate")) {
   let hrm = new HeartRateSensor();
   
@@ -49,8 +48,3 @@ if (me.permissions.granted("access_heart_rate")) {
   hrm.start();
   
 }
-
-// Declare an event handler that will be called every time a new HR value is received.
-
-
-// Begin monitoring the sensor
