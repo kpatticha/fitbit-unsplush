@@ -1,4 +1,4 @@
-# Unsplush
+# Unsplash
 A colourful, elegant clock face that displays the time and your heartbeat
 
 ## Fitbit Clock Face
