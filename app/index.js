@@ -24,12 +24,11 @@ clock.ontick = (evt) => {
   if (preferences.clockDisplay === "12h") {
     // 12h format
     ampm.text = hours >= 12 ? 'PM' : 'AM';
-    hours = util.zeroPad(hours % 12) || 12;
+    hours = util.zeroPad(hours % 12 ? hours : 12);
   } else {
     // 24h format
     hours = util.zeroPad(hours);
   }
-  
   // Update values
   hour.text = hours;
   minutes.text = mins;
