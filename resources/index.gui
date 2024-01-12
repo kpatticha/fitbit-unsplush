@@ -1,8 +1,0 @@
-<svg class="background">
-  <image href="background.jpg" />
-  <text id="hour" />
-  <text id="minutes" />
-  <text id="ampm" />
-  <image id="hrtImage" />
-  <text id="hrtBeat" />
-</svg>

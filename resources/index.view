@@ -1,0 +1,10 @@
+<svg class="background">
+  <image href="background.jpg" />
+  <text id="hour" />
+  <text id="minutes" />
+  <text id="ampm" />
+  <image id="stepsImage" />
+  <text id="stepsCount" />
+  <image id="hrtImage" />
+  <text id="hrtBeat" />
+</svg>
